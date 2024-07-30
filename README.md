@@ -8,7 +8,7 @@ npm install tornado
 
 ### Usage
 ```typescript
-import { tornado, presets, style } from "../src";
+import { tornado, presets, style } from "tornado";
 
 const spinner = new tornado({
   // frames?: string[], * presets.arc
