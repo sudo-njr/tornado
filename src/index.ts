@@ -45,9 +45,9 @@ const presets = {
 
 class tornado {
   private interval: NodeJS.Timeout | null = null;
-  private write(text: string, ignore?: boolean) {
+  private write(text: string) {
     stdout.write(text);
-    if (this.interval && !ignore) {
+    if (this.interval) {
       clearInterval(this.interval);
       stdout.write("\r");
     }
@@ -65,7 +65,7 @@ class tornado {
     let i = 0;
 
     this.interval = setInterval(() => {
-      this.write(`\r${frames[i]} ${text}`, true);
+      stdout.write(`\r${frames[i]} ${text}`);
       i = (i + 1) % frames.length;
     }, speed);
   }
