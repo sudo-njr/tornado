@@ -1,6 +1,6 @@
 ## Tornado
 > [!WARNING]
-> This package is not published because the npm name dispute is still in review.
+> This original package was renamed to [runtime](https://www.npmjs.com/package/runtime) by [@stringparser](https://github.com/stringparser)
 
 ```bash
 npm install tornado
