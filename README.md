@@ -7,21 +7,31 @@ npm install tornado
 ```
 
 ### Usage
+"*" represents the default setting.
 ```typescript
 import { tornado, presets, style } from "tornado";
 
 const spinner = new tornado({
-  // frames?: string[], * presets.arc
-  // To change the style -- ??.map((frame) => style.blue(frame)),
+  // frames?: string[], * presets.arc,
   // speed?: number, * 75
   // text: string,
 });
 
 setTimeout(() => {
-  // Also fail & warn
+  // Also, .fail() & .warn()
   spinner.succeed({
-    // text: string
+    // text: string,
     // symbol?: string
   });
 }, 500);
 ```
+### Applying style
+```typescript
+import { tornado, presets, style } from "tornado";
+
+const spinner = new tornado({
+  frames: presets.arc.map((frame) => { style.blue(frame) }),
+  text: string,
+});
+
+...
