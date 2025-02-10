@@ -33,5 +33,4 @@ const spinner = new tornado({
   frames: presets.arc.map((frame) => style.blue(frame)),
   text: string,
 });
-
-...
+```
