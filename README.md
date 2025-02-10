@@ -30,7 +30,7 @@ setTimeout(() => {
 import { tornado, presets, style } from "tornado";
 
 const spinner = new tornado({
-  frames: presets.arc.map((frame) => { style.blue(frame) }),
+  frames: presets.arc.map((frame) => style.blue(frame)),
   text: string,
 });
 
