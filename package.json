@@ -2,8 +2,10 @@
   "name": "tornado",
   "type": "module",
   "version": "1.0.0",
+  "license": "MIT",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "main": "dist/index.mjs",
   "types": "dist/index.d.ts",
